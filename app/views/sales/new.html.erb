@@ -1,0 +1,19 @@
+
+<h1>El mejor formulario del mundo mundial!!</h1>
+<%= form_with model: @sale, local: true do |f| %>
+<%= f.label "Descripción" %>
+<%= f.text_area :detail %>
+<%= f.label "Categoría" %>
+<%= f.text_field :category %>
+<%= f.label "Valor" %>
+<%= f.number_field :value %>
+<%= f.label "Descuento" %>
+<%= f.number_field :discount %>
+<%= f.label "Exento de IVA" %>
+<%= f.check_box :tax %>
+<%= f.submit "Enviar"%>
+<% end %>
+<br>
+<br>
+<br>
+<img src="https://i2.wp.com/thebestsites.com/wp-content/uploads/2017/09/Know-Your-Meme.png?fit=1000%2C500&ssl=1" alt="">
